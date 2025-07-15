@@ -4,10 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Automated Searchbar</title>
+    <title>Document</title>
     <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search" />
-
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -17,12 +16,23 @@
 </head>
 
 <body>
-    <div class="search-box">
+    <nav>
+        <ul>
+            <li><a href="#"><span class="material-symbols-outlined">sword_rose</span>AnimeHub</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Anime</a></li>
+            <li><a href="#">Genre</a></li>
+            <li><a href="#">Manga</a></li>
+            <li><a href="#">Login/Signup</a></li>
+        </ul>
+    </nav>
+    <div class="container">
         <div class="row">
-            <input type="text" id="Input-box" placeholder="Search anything" autocomplte="off">
+            <input type="text" placeholder="Enter Anime Name" id="Inputbox" autocomplte="off">
             <button><span class="material-symbols-outlined">search</span></button>
         </div>
-        <div class="result-box">
+        <div class="resultbox">
 
         </div>
     </div>
