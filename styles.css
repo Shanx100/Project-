@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #151a21;
+    min-height: 100vh;
+}
+
+.heart {
+    position: relative;
+    width: 100px;
+    height: 90px;
+    background: red;
+    box-shadow: -10px 10px 90px red;
+    margin: 50vh auto 0;
+    transform: rotate(-45deg);
+    animation: pulse 1s infinite;
+}
+
+.heart::before,
+.heart::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 90px;
+    border-radius: 50%;
+    background: red;
+}
+
+.heart::before {
+    top: -50px;
+    left: 0;
+}
+
+.heart::after {
+    top: 0;
+    left: 50px;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: rotate(-45deg) scale(1)
+    }
+
+    50% {
+        transform: rotate(-45deg) scale(1.2);
+    }
+}
