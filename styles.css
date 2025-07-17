@@ -6,7 +6,178 @@
 
 body {
     background: #151a21;
+    font-family: "Poppins", sans-serif;
     min-height: 100vh;
+    color: white;
+}
+
+nav {
+    background-color: crimson;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+}
+
+nav li {
+    height: 50px;
+}
+
+nav a {
+    height: 100%;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    padding: 0 30px;
+    color: #fff;
+}
+
+nav a:hover {
+    background: rgba(245, 245, 245, 0.655);
+}
+
+nav li:first-child {
+    margin-right: auto;
+}
+
+nav li {
+    position: relative;
+}
+
+nav li ul.Dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 150px;
+    background: crimson;
+    box-shadow: 0 2px 8px rgb(0, 0, 0, 0.2);
+    z-index: 100;
+    display: none;
+}
+
+nav ul.Dropdown li {
+    height: auto;
+}
+
+nav ul li:hover>.Dropdown {
+    display: block;
+}
+
+nav ul.dropdown a {
+    padding: 10px 10px;
+}
+
+.material-symbols-outlined {
+    color: red;
+}
+
+input {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: white;
+    border: none;
+}
+
+#date1 {
+    padding: 10px 73px;
+    border-radius: 5px;
+    background: white;
+    border: none;
+}
+
+#date2 {
+    padding: 10px 73px;
+    border-radius: 5px;
+    background: white;
+    border: none;
+}
+
+.Inputsound:focus {
+    outline: none;
+    border: 1px solid crimson;
+    box-shadow: 0 0 5px crimson;
+}
+
+label {
+    font-size: 1.2rem;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    width: 500px;
+    margin: 40px auto;
+    background: blue;
+    padding: 30px;
+    display: flex;
+}
+
+.player {
+    color: red;
+    padding: 10px 0;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button-container #Result {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background: rgb(239, 46, 84);
+    box-shadow: -10px 10px 90px crimson;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin: 20px auto;
+    display: none;
+}
+
+.button-container button:hover {
+    background: rgb(248, 3, 52);
+}
+
+.start-game {
+    width: 600px;
+    background: #fff;
+    margin: 40px auto;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.game-input {
+    flex: 1;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 15px 10px;
+    color: #333;
+    text-align: center;
+}
+
+::placeholder {
+    color: red;
+    font-size: 1.2rem;
+}
+
+#Begin {
+    background: transparent;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
 }
 
 .heart {
@@ -14,10 +185,11 @@ body {
     width: 100px;
     height: 90px;
     background: red;
-    box-shadow: -10px 10px 90px red;
-    margin: 50vh auto 0;
+    box-shadow: -10px 10px 90px crimson;
+    cursor: pointer;
     transform: rotate(-45deg);
     animation: pulse 1s infinite;
+    display: none;
 }
 
 .heart::before,
@@ -50,4 +222,21 @@ body {
     50% {
         transform: rotate(-45deg) scale(1.2);
     }
+}
+
+.resultscontainer {
+    width: 400px;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    margin: auto;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.3rem;
+    display: none;
+}
+
+#LoadingResults {
+    color: white;
 }
