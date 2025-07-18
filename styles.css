@@ -5,23 +5,31 @@
 }
 
 body {
-    background-image: url(images/clock\ background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    background-color: #151a21;
+    min-height: 100vh;
 }
 
-#clockcontainer {
+.list-container {
     display: flex;
     justify-content: center;
-    align-items: center;
     height: 100vh;
+    align-items: center;
 }
 
-#Clock {
+.list {
+    font-size: 2rem;
     font-family: monospace;
-    font-size: 6.5rem;
-    font-weight: bold;
-    text-align: center;
+    color: white;
+    display: none;
+}
+
+button {
+    font-size: 1.5rem;
+    border-radius: 5px;
+    border: none;
+    padding: 8px;
+    color: white;
+    background: tomato;
+    cursor: pointer;
+    box-shadow: -10px 10px 90px crimson;
 }
