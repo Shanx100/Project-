@@ -238,5 +238,6 @@ label {
 }
 
 #LoadingResults {
-    color: white;
+    color: lightskyblue;
+    font-size: 1.2rem;
 }

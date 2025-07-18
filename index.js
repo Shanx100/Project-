@@ -12,9 +12,7 @@ Begin.addEventListener("click", () => {
     sound.loop = true;
     sound.currentTime = 0;
     sound.play();
-    setTimeout(() => {
-        window.alert("Both players should fill in the input boxes provided below to find your Soulmate🥰🥰");
-    }, 5000);
+
 
 });
 
@@ -38,8 +36,6 @@ Inputsound.forEach(input => {
 Result.addEventListener("click", () => {
 
 
-    let player1info = [];
-    let player2info = [];
     const Showmessage = document.getElementById("Showmessage");
 
     const name1 = document.getElementById("name1").value;
@@ -58,10 +54,20 @@ Result.addEventListener("click", () => {
     const day2 = document.getElementById("day2").value;
     const hour2 = document.getElementById("hour2").value;
 
+    if (name1 === "" & name2 === "") {
+        window.alert("Please make sure to fill in the required info to find your soulmate🥰🥰");
+        return;
+    }
 
     resultscontainer.style.display = "flex";
     Result.style.display = "none";
     ResultList.textContent = "Loading...";
+
+    let player1info = [];
+    let player2info = [];
+
+
+
 
 
     player1info.push(name1);
@@ -83,23 +89,38 @@ Result.addEventListener("click", () => {
 
     let matches = []
 
-    for (let letter of firstname) {
-        if (secondname.includes(letter) & !matches.includes(letter)) {
-            matches.push(letter);
+
+
+
+    setTimeout(() => {
+        ResultList.textContent = "";
+        for (let letter of firstname) {
+            if (secondname.includes(letter) & !matches.includes(letter)) {
+                matches.push(letter);
+            }
         }
-    }
-    if (matches.length > 0) {
-        ResultList.textContent = "";
-        Showmessage.textContent = "Congrats🥳🥳You are a match"
-    }
-    else {
-        ResultList.textContent = "";
-        Showmessage.textContent = "Sorry!You could not match😥😥";
-    }
+        if (matches.length > 0) {
+
+            Showmessage.textContent = "Congrats🥳🥳You are a match";
+            setTimeout(() => {
+                Showmessage.textContent = "";
+                heart.style.display = "flex";
+                heartsound.loop = true;
+                heartsound.currentTime = 0;
+                heartsound.play();
+            }, 3000);
+        }
+        else {
+
+            Showmessage.textContent = "Sorry!You could not match😥😥";
+        }
 
 
 
-})
+    }, 4000);
+
+
+});
 
 
 
