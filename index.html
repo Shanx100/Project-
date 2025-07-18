@@ -4,110 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+    <title>Digital Clock Programm</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li><a href="#"><span class="material-symbols-outlined">favorite</span>LoversHub</a></li>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Blog</a>
-                <ul class="Dropdown">
-                    <li><a href="#">Finding Your True Love</a></li>
-                    <li><a href="#">Connecting with Old Soulmates</a></li>
-                    <li><a href="#">Exchanging love Vowls</a></li>
-                    <li><a href="#">Confessing Your Feelings</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Reviews</a></li>
-            <li><a href="#">Play Game</a></li>
-        </ul>
-    </nav>
-    <div class="form-container">
-        <form class="player1">
-            <label for="player1" class="player">Player1</label><br>
-            <div class="sub-container">
-                <label for="name">Name</label><br>
-                <input type="text" id="name1" class="Inputsound">
-            </div>
-            <div class="sub-container">
-                <label for="date">Date</label><br>
-                <input type="number" id="date1" class="Inputsound" min="1" max="31">
-            </div>
-            <div class="sub-container">
-                <label for="month">Month</label><br>
-                <input type="text" id="month1" class="Inputsound">
-            </div>
-            <div class="sub-container">
-                <label for="year">Year</label><br>
-                <input type="text" id="year1" class="Inputsound">
-            </div>
-            <div class="sub-container">
-                <label for="day">Day</label><br>
-                <input type="text" id="day1" class="Inputsound">
-            </div>
-            <div class="sub-container">
-                <label for="hour">Hour</label><br>
-                <input type="text" id="hour1" class="Inputsound">
-            </div>
-        </form>
-        <form class="player2">
-            <label for="player1" class="player">Player2</label><br>
-            <div class="sub-container">
-                <label for="name">Name</label><br>
-                <input type="text" id="name2" class="Inputsound">
-            </div>
-            <div class="sub-container">
-                <label for="date">Date</label><br>
-                <input type="number" id="date2" class="Inputsound" min="1" max="31">
-            </div>
-            <div class="sub-container">
-                <label for="month">Month</label><br>
-                <input type="text" id="month2" class="Inputsound">
-            </div>
-            <div class="sub-container">
-                <label for="year">Year</label><br>
-                <input type="text" id="year2" class="Inputsound">
-            </div>
-            <div class="sub-container">
-                <label for="day">Day</label><br>
-                <input type="text" id="day2" class="Inputsound">
-            </div>
-            <div class="sub-container">
-                <label for="hour">Hour</label><br>
-                <input type="text" id="hour2" class="Inputsound">
-            </div>
-        </form>
+    <div id="clockcontainer">
+        <div id="Clock">00:00:00</div>
     </div>
-    <div class="button-container">
-        <button id="Result">Result</button>
-    </div>
-    <div class="start-game">
-        <div class="row">
-            <input class="game-input" type="text" placeholder="Enter to Start Game" class="Inputsound">
-            <button id="Begin"><span class="material-symbols-outlined">play_circle</span></button>
-        </div>
-    </div>
-    <audio src="audios/mixkit-forever-love-38.mp3" id="sound"></audio>
-    <div class="resultscontainer">
-        <div id="LoadingResults"></div>
-        <div id="Showmessage"></div>
-        <div class="heart"></div>
-        <audio src="audios/heartbeat.mp3" id="heart-sound"></audio>
-        <audio src="audios/select.mp3" id="Selectkeys"></audio>
-    </div>
-
     <script src="index.js"></script>
 </body>
 
