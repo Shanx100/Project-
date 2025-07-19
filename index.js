@@ -1,6 +1,7 @@
 const Searchbar = document.getElementById("Searchbar");
 const SearchResults = document.getElementById("search-items");
 const Button = document.getElementById("button");
+const sound = document.getElementById("sound");
 
 let avilablekeywords = [
     "How to code",
@@ -133,6 +134,8 @@ Searchbar.onkeyup = function () {
 function selectkey(list) {
     Searchbar.value = list.innerHTML;
     SearchResults.innerHTML = "";
+    sound.currentTime = 0;
+    sound.play();
 }
 
 Button.addEventListener("click", () => {
