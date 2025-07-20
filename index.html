@@ -4,27 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responive NavBar</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Online Banking Simulator</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <div class="search-container">
-        <div class="row">
-            <input type="text" placeholder="Search Anything" id="Searchbar">
-            <button id="button"><span class="material-symbols-outlined">search</span></button>
+    <div class="container">
+        <h1>Online Banking Simulator</h1>
+        <input type="text" placeholder="Enter Your name Here" id="Name">
+        <div class="sub-container">
+            <input type="number" placeholder="Deposit" id="Deposit" min="1">
+            <input type="number" placeholder="Withdrawal" id="Withdrawal" min="1">
         </div>
-        <div class="search-items" id="search-items">
+        <button id="Button">Submit</button>
+        <div class="waiting" id="Processing">
 
         </div>
-        <audio src="audios/select.mp3" id="sound"></audio>
+        <div class="Result">
+
+        </div>
+        <audio src="audios/payout.mp3" id="sound"></audio>
     </div>
     <script src="index.js"></script>
 </body>

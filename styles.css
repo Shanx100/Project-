@@ -5,57 +5,79 @@
 }
 
 body {
-    background: #151a21;
+    background: #fff8f0;
     min-height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.search-container {
-    width: 600px;
-    background-color: white;
-    margin: 50vh auto 0;
-}
-
-.row {
-    display: flex;
-    align-items: center;
-    padding: 10px 10px;
+.container {
+    max-width: 600px;
+    width: 90%;
+    background: rgb(255, 255, 255, 0.2);
+    box-shadow: 0 0 30px rgb(0, 0, 0, 0.1);
+    border-radius: 8px;
+    border: none;
+    margin: auto;
+    text-align: center;
+    padding: 30px;
 }
 
 input {
-    flex: 1;
-    border: 0;
-    outline: 0;
-    padding: 15px 10px;
-    background-color: transparent;
-    font-size: 1.5rem;
-    font-family: monospace;
+    font-size: 1.2rem;
+    padding: 10px 5px;
+    border-radius: 5px;
 }
 
 ::placeholder {
     color: #333;
 }
 
+#Name {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.sub-container {
+    margin: 40px 5px;
+    display: flex;
+    gap: 10px;
+}
+
 button {
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 10px 10px;
+    background: tomato;
+    border-radius: 8px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(249, 42, 5);
+}
+
+.Result ul {
+    margin-top: 5px;
+    padding: 10px 5px;
+    border: 1px solid #999;
+    font-size: 1.2rem;
+    font-family: monospace;
+}
+
+.Result li {
+    padding: 10px 5px;
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: monospace;
+    border-radius: 5px;
     border: 0;
     outline: 0;
-    background: transparent;
-    cursor: pointer;
 }
 
-.search-items ul {
-    border: 1px solid gray;
-    padding: 10px 15px;
-}
-
-.search-items li {
-    list-style: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    font-family: "Poppins", sans-serif;
-}
-
-.search-items li:hover {
-    background: rgba(135, 206, 250, 0.474);
+.waiting {
+    font-family: monospace;
+    font-size: 1.2rem;
+    color: green;
 }
