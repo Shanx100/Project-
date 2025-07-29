@@ -1,60 +1,51 @@
-const avilablekeywords = [
-  "The Dark Knight",
-  "Avengers: Endgame",
-  "Spider-Man: No Way Home",
-  "Iron Man",
-  "Black Panther",
-  "Captain America: The Winter Soldier",
-  "Wonder Woman",
-  "Thor: Ragnarok",
-  "Doctor Strange",
-  "Guardians of the Galaxy",
-  "Man of Steel",
-  "Deadpool",
-  "The Avengers",
-  "Shazam!",
-  "Ant-Man",
-  "The Incredible Hulk",
-  "Justice League",
-  "X-Men: Days of Future Past",
-  "Batman Begins",
-  "Eternals"
-];
-const resultbox = document.getElementById("Display");
-const search = document.getElementById("Search");
-const Button = document.getElementById("Button");
+const display = document.getElementById("Clockresult");
+const sound = document.getElementById("sound");
 
+let timer = null;
+let starttime = 0;
+let elapsedtime = 0;
+let isRunning = false;
 
-search.onkeyup = function () {
-  let results = [];
-  let input = search.value;
-
-  if (input.length) {
-    results = avilablekeywords.filter((keyword) => {
-      if (keyword.toLowerCase().includes(input.toLowerCase())) {
-        return keyword;
-      }
-    }
-
-    )
+function start() {
+  if (!isRunning) {
+    starttime = Date.now() - elapsedtime;
+    timer = setInterval(update, 10);
+    isRunning = true;
+    sound.currenttime = 0;
+    sound.loop = true;
+    sound.play();
   }
-  display(results);
-
-
-
 }
-function display(results) {
-  const content = results.map((list) => {
-    return `<li onclick=selectinput(this)>` + list + `</li>`
-  })
-  resultbox.innerHTML = `<ul>` + content.join("") + `</ul>`;
-}
+function stop() {
+  if (isRunning) {
+    clearInterval(timer);
+    elapsedtime = Date.now() - starttime;
+    isRunning = false;
+    sound.loop = false;
+    sound.pause();
 
-function selectinput(list) {
-  search.value = list.innerHTML;
-  resultbox.innerHTML = "";
+  }
 }
 
-Button.onclick = function () {
-  search.value = "";
+function reset() {
+  clearInterval(timer);
+  starttime = 0;
+  elapsedtime = 0;
+  isRunning = false;
+  display.textContent = `00:00:00:00`;
+  sound.loop = false;
+  sound.currenttime = 0;
+  sound.pause;
+}
+
+function update() {
+  const currenttime = Date.now();
+  const elapsedtime = currenttime - starttime;
+
+  const hours = Math.floor(elapsedtime / (1000 * 60 * 60 * 60)).toString().padStart(2, 0);
+  const minutes = Math.floor(elapsedtime / (1000 * 60) % 60).toString().padStart(2, 0);
+  const seconds = Math.floor(elapsedtime / (1000) % 60).toString().padStart(2, 0);
+  const milliseconds = Math.floor(elapsedtime % 1000 / 10).toString().padStart(2, 0);
+
+  display.textContent = `${hours}:${minutes}:${seconds}:${milliseconds}`;
 }
