@@ -5,79 +5,140 @@
 }
 
 body {
-    background: #fff8f0;
+    background-image: url(images/movie\ background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     min-height: 100vh;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav {
+    background-color: #151a21;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    font-family: Poppins;
+}
+
+nav li {
+    height: 50px;
+}
+
+nav a {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    text-decoration: none;
+    color: tomato;
+}
+
+nav a:hover {
+    background-color: rgba(128, 128, 128, 0.742);
+}
+
+nav li:first-child {
+    margin-right: auto;
+}
+
+nav li {
+    position: relative;
+}
+
+nav li ul.Dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 150px;
+    background: #151a21;
+    box-shadow: 0 2px 8px rgb(0, 0, 0, 0.2);
+    z-index: 999;
+    display: none;
+}
+
+nav ul.Dropdown li {
+    height: 100%;
+}
+
+
+nav ul li:hover>.Dropdown {
+    display: block;
+}
+
+nav li ul.Dropdown a {
+    display: block;
+    padding: 10px 20px;
+    color: tomato;
 }
 
 .container {
     max-width: 600px;
     width: 90%;
-    background: rgb(255, 255, 255, 0.2);
-    box-shadow: 0 0 30px rgb(0, 0, 0, 0.1);
-    border-radius: 8px;
+    margin: 300px auto 0;
+    background-color: #151a21;
     border: none;
-    margin: auto;
-    text-align: center;
-    padding: 30px;
+    border-radius: 10px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px;
+    background: transparent;
 }
 
 input {
+    flex: 1;
+    border: none;
+    outline: 0;
+    padding: 15px 20px;
     font-size: 1.2rem;
-    padding: 10px 5px;
-    border-radius: 5px;
-}
-
-::placeholder {
-    color: #333;
-}
-
-#Name {
-    margin-top: 10px;
-    text-align: center;
-}
-
-.sub-container {
-    margin: 40px 5px;
-    display: flex;
-    gap: 10px;
+    background: transparent;
+    color: white;
 }
 
 button {
-    font-size: 1.3rem;
-    font-weight: bold;
-    padding: 10px 10px;
-    background: tomato;
-    border-radius: 8px;
     border: none;
-    color: #fff;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: rgb(249, 42, 5);
-}
-
-.Result ul {
-    margin-top: 5px;
-    padding: 10px 5px;
-    border: 1px solid #999;
-    font-size: 1.2rem;
-    font-family: monospace;
-}
-
-.Result li {
-    padding: 10px 5px;
-    list-style: none;
-    font-size: 1.2rem;
-    font-family: monospace;
-    border-radius: 5px;
-    border: 0;
     outline: 0;
+    background: transparent;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: white;
 }
 
-.waiting {
-    font-family: monospace;
-    font-size: 1.2rem;
-    color: green;
+::placeholder {
+    color: #fff;
+}
+
+#Display ul {
+    color: white;
+    border-top: 1px solid white;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+#Display ul li {
+    color: white;
+    padding: 10px 20px;
+    list-style: none;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+#Display ul li:hover {
+    background-color: rgba(128, 128, 128, 0.679);
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(fonts/PoppinsSemiboldItalic-Y132\ \(1\).ttf);
 }
