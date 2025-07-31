@@ -1,232 +1,67 @@
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    background-image: url(images/gaming\ backgroundimage.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    background-color: white;
+    font-family: monospace;
     min-height: 100vh;
-}
-
-nav {
-    background-color: #151a21;
-    font-family: "Poppins", sans-serif;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 999;
-    width: 100vw;
-}
-
-nav ul {
-    display: flex;
-    justify-content: flex-end;
-    list-style: none;
-}
-
-nav li {
-    height: 50px;
-}
-
-nav a {
-    display: flex;
-    height: 100%;
-    align-items: center;
-    padding: 0 30px;
-    color: rgb(213, 30, 66);
-    text-decoration: none;
-}
-
-nav a:hover {
-    background-color: rgba(128, 128, 128, 0.608);
-}
-
-nav li:first-child {
-    margin-right: auto;
-}
-
-nav ul li button {
-    border-radius: 5px;
-    font-size: 1rem;
-    padding: 5px 5px;
-    border: none;
-    background-color: rgb(246, 36, 36);
-    color: white;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-
-nav ul li button:hover {
-    background-color: red;
-}
-
-.sidebar {
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100vh;
-    width: 250px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    z-index: 99;
-    background-color: #151a21;
-    filter: blur(0.3px);
-    display: none;
-}
-
-.sidebar li {
-    width: 100%;
-}
-
-.sidebar a {
-    width: 100%;
 
 }
 
-.GameZone {
-    display: none;
-}
-
-.menu-btn {
-    display: none;
-}
-
-/* Reset and Base Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: sans-serif;
-    scroll-behavior: smooth;
-}
-
-/* Shared section style */
-.section {
-    height: 100vh;
-    padding: 2rem;
+.title {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-/* 1️⃣ Hero Section */
-.hero {
-    background-color: #fef9f0;
+.title h1 {
+    font-size: 4rem;
+    font-weight: bold;
 }
 
-.hero-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+.container {
+    background-color: rgba(255, 192, 203, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    width: 100%;
-    max-width: 1200px;
 }
 
-.hero-text h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-}
-
-.hero-text p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-}
-
-.hero-image img {
-    width: 100%;
-    height: auto;
-}
-
-/* 2️⃣ Games Section */
-.games {
-    background-color: #e3f6f5;
-    text-align: center;
-}
-
-.grid {
+.grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1.5rem;
-    margin-top: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
     width: 100%;
-    max-width: 1000px;
+    padding: 20px;
 }
 
-.card {
-    background-color: white;
-    padding: 2rem;
-    border-radius: 1rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.card-container {
+    width: 325px;
+    border-radius: 8px;
+    background: #f0f0f0;
+    overflow: hidden;
 }
 
-/* 3️⃣ Final Section */
-.final {
-    background-color: #ffe5ec;
-    text-align: center;
+.card-container img {
+    width: 100%;
 }
 
-/* 🔘 Scroll Button */
-.scroll-btn {
-    margin-top: 2rem;
-    padding: 0.8rem 2rem;
-    font-size: 1rem;
-    border: none;
-    background-color: #333;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s ease;
+.card-content {
+    padding: 10px;
 }
 
-.scroll-btn:hover {
-    background-color: #555;
+.card-container h3 {
+    font-size: 28px;
+    margin-bottom: 16px;
 }
 
-/* 🔁 Responsive (Hero Layout) */
-@media (max-width: 768px) {
-    .hero-content {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-
-    .hero-image {
-        order: -1;
-    }
-
-    .hero-text h1 {
-        font-size: 2rem;
-    }
-
-    .hero-text p {
-        font-size: 1rem;
-    }
-}
-
-
-@media(max-width:800px) {
-    .HideonMobile {
-        display: none;
-    }
-
-    .menu-btn {
-        display: block;
-    }
-}
-
-@media(max-width:400px) {
-    .sidebar {
-        width: 100vw;
-    }
+.card-container p {
+    font-size: 20px;
+    font-weight: bold;
 }
