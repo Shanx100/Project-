@@ -4,84 +4,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responive Cards</title>
+    <title>Document</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <div class="title">
-        <h1>My Anime List</h1>
-    </div>
     <div class="container">
         <div class="grid-container">
-            <div class="card-container">
-                <img src="images/Animepics/card2.jpeg" alt="">
-                <div class="card-content">
-                    <h3>Card1</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, quae!</p>
-                    <a href="#">Read More</a>
-                </div>
+            <div class="text">
+                <h1><span class="material-symbols-outlined">sword_rose</span> ANIMEZONE</h1>
             </div>
-            <div class="card-container">
-                <img src="images/Animepics/card5.jpg" alt="">
-                <div class="card-content">
-                    <h3>Card2</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, quae!</p>
-                    <a href="#">Read More</a>
+            <div class="search-container">
+                <div class="row">
+                    <input type="text" placeholder="Search Anime" id="search">
+                    <button id="Button"><span class="material-symbols-outlined">search</span></button>
                 </div>
-            </div>
-            <div class="card-container">
-                <img src="images/Animepics/card6.jpg" alt="">
-                <div class="card-content">
-                    <h3>Card3</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, quae!</p>
-                    <a href="#">Read More</a>
-                </div>
-            </div>
-            <div class="card-container">
-                <img src="images/Animepics/card5.jpg" alt="">
-                <div class="card-content">
-                    <h3>Card2</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, quae!</p>
-                    <a href="#">Read More</a>
-                </div>
-            </div>
-            <div class="card-container">
-                <img src="images/Animepics/card6.jpg" alt="">
-                <div class="card-content">
-                    <h3>Card3</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, quae!</p>
-                    <a href="#">Read More</a>
-                </div>
-            </div>
-            <div class="card-container">
-                <img src="images/Animepics/card5.jpg" alt="">
-                <div class="card-content">
-                    <h3>Card2</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, quae!</p>
-                    <a href="#">Read More</a>
-                </div>
-            </div>
-            <div class="card-container">
-                <img src="images/Animepics/card6.jpg" alt="">
-                <div class="card-content">
-                    <h3>Card3</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, quae!</p>
-                    <a href="#">Read More</a>
-                </div>
-            </div>
-            <div class="card-container">
-                <img src="images/Animepics/card5.jpg" alt="">
-                <div class="card-content">
-                    <h3>Card2</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, quae!</p>
-                    <a href="#">Read More</a>
+                <div class="search-results">
+
                 </div>
             </div>
         </div>
 
-
     </div>
+    <section class="hero">
+        <div class="hero-container">
+            <div class="second-grid-container">
+                <div class="hero-text">
+                    <h2>Demon Slayer</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur nam doloribus, optio
+                        tempore error corporis?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat,
+                        incidunt?</p>
+                    <button class="hero-btn">Signup</button>
+                    <button class="hero-btn">Watch Now</button>
+                </div>
+                <div class="hero-image">
+                    <img src="images/Animepics/hero-section-image.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <button class="scroll" onclick="scrollintoSection('Anime')">Popular Today</button>
+    </section>
+    <section class="second-section" id="Anime">
+        <div class="third-grid-container">
+            <div class="card-container">
+                <img src="images/Animepics/card1.avif" alt="">
+                <div class="anime-text">
+                    <h3>BloodEyes</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                        lit. Natus, iste.</p>
+                </div>
+            </div>
+            <div class="card-container">
+                <img src="images/Animepics/card2.jpeg" alt="">
+                <div class="anime-text">
+                    <h3>Dressup Waifu</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                        lit. Natus, iste.</p>
+                </div>
+            </div>
+            <div class="card-container">
+                <img src="images/Animepics/card3.jpg" alt="">
+                <div class="anime-text">
+                    <h3>Naruto</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                        lit. Natus, iste.</p>
+                </div>
+            </div>
+            <div class="card-container">
+                <img src="images/Animepics/card4.jpg" alt="">
+                <div class="anime-text">
+                    <h3>DreamGirl</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                        lit. Natus, iste.</p>
+                </div>
+            </div>
+            <div class="card-container">
+                <img src="images/Animepics/card5.jpg" alt="">
+                <div class="anime-text">
+                    <h3>Demon Slayer</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                        lit. Natus, iste.</p>
+                </div>
+            </div>
+            <div class="card-container">
+                <img src="images/Animepics/card6.jpg" alt="">
+                <div class="anime-text">
+                    <h3>Solo Levelling</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                        lit. Natus, iste.</p>
+                </div>
+            </div>
+            <div class="card-container">
+                <img src="images/Animepics/card7.jpeg" alt="">
+                <div class="anime-text">
+                    <h3>One Piece</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                        lit. Natus, iste.</p>
+                </div>
+            </div>
+            <div class="card-container">
+                <img src="images/Animepics/card8.jpeg" alt="">
+                <div class="anime-text">
+                    <h3>Death Note</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                        lit. Natus, iste.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="third-section" id="Special">
+        <h1>Special Recommendation</h1>
+        <div class="fourth-grid-container">
+            <div class="cyberpunkimg">
+                <img src="images/Animepics/cyberpunk.jpg" alt="anime pic">
+            </div>
+            <div class="cyberpunk-text">
+                <h2>CyberPunk EdgeRunners</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam exercitationem qui dolorem provident
+                    debitis dolore illo facere labore sunt deserunt sit cupiditate quo culpa, doloribus commodi
+                    temporibus nihil alias consequatur aliquid magnam? <br>Quo
+                    iusto quibusdam consequatur provident veritatis modi, a tempora quaerat. Vero vel, qui quibusdam
+                    dignissimos provident nulla? Accusantium.</p>
+                <div class="ratings">
+                    <span class="material-symbols-outlined gold-icon">star_rate</span>
+                    <span class="material-symbols-outlined gold-icon">star_rate</span>
+                    <span class="material-symbols-outlined gold-icon">star_rate</span>
+                    <span class="material-symbols-outlined gold-icon">star_rate</span>
+                    <span class="material-symbols-outlined gold-icon">star_rate</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="last-section">
+        <div class="fifth-grid-container">
+            <div class="last-image">
+                <img src="images/Animepics/cute anime pic.webp" alt="cute anime pic">
+                <h2>Welcome to the Elven Word Game</h2>
+                <h3>Click the button below and a magic word shall apper</h3>
+                <h4>Show us what you got Adventurer🤴</h4>
+            </div>
+            <div class="last-button">
+                <button class="last-btn" id="last-btn">Click</button>
+                <h2 id="Wordresult"></h2>
+                <audio src="audios/enchanted-souls-orchestral-anime-307865.mp3" id="sound"></audio>
+            </div>
+
+        </div>
+    </section>
+    <script src="index.js"></script>
 </body>
 
 </html>
