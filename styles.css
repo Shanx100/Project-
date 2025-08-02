@@ -4,336 +4,72 @@
     box-sizing: border-box;
 }
 
-body {
-    min-height: 100vh;
-}
-
-nav {
-    background-color: #151a21;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    z-index: 999;
-    font-family: "Poppins", sans-serif;
-}
-
-nav ul {
+.section {
     display: flex;
-    justify-content: flex-end;
-    list-style: none;
-}
-
-nav li {
-    height: 60px;
-}
-
-nav a {
-    height: 100%;
-    text-decoration: none;
-    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    color: white;
-    padding: 0 30px;
-}
-
-nav a:hover {
-    background-color: rgba(128, 128, 128, 0.758);
-}
-
-nav li:first-child {
-    margin-right: auto;
-}
-
-nav li {
-    position: relative;
-}
-
-.Signupbtn {
-    font-size: 15px;
-    font-weight: bold;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    background: rgb(237, 84, 28);
-    cursor: pointer;
-}
-
-nav li ul.Dropdown {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    min-width: 150px;
-    z-index: 1000;
-    background-color: #151a21;
-    display: none;
-}
-
-nav ul.Dropdown li {
-    height: auto;
-}
-
-nav ul li:hover>.Dropdown {
-    display: block;
-}
-
-nav ul.Dropdown a {
-    display: block;
-    padding: 10px 15px;
-    color: white;
-    width: 100%;
-}
-
-.sidebar {
-    position: fixed;
-    top: 0;
-    right: 0;
     height: 100vh;
-    width: 250px;
-    z-index: 999;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    filter: blur(0.5px);
     background-color: #151a21;
-    box-shadow: 0 0 8px rgb(0, 0, 0, 0.2);
-    display: none;
-}
-
-.logo {
-    display: none;
-}
-
-.sidebar ul.Dropdown li {
-    width: 250px;
-}
-
-.sidebar li {
-    width: 100%;
-}
-
-.sidebar a {
-    width: 100%;
-}
-
-.Showsidebar {
-    display: none;
-}
-
-.hero {
+    font-family: sans-serif;
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 100px;
-    background: #151a21;
-}
-
-.grid-container1 {
-    border: 2px solid red;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
     padding: 20px;
-
 }
 
-.content {
+.container {
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
     padding: 10px;
 }
 
-.content h2 {
-    font-size: 4rem;
-    font-weight: bold;
-    color: white;
-    font-family: "Poppins", sans-serif;
-    margin-bottom: 5px;
-}
-
-.content p {
-    font-size: 18px;
-    color: rgba(255, 255, 255, 0.544);
-    line-height: 1.4;
-    font-family: "Poppins", sans-serif;
-    margin-bottom: 5px;
-}
-
-.content button {
+button {
     font-size: 2rem;
+    font-family: sans-serif;
+    font-weight: bold;
     border: none;
     border-radius: 8px;
     color: white;
-    font-family: "Poppins", sans-serif;
-    background-color: rgb(251, 41, 4);
     cursor: pointer;
-    transition: background 0.3s ease;
-    margin-top: 10px;
-    padding: 8px;
+    padding: 10px;
 }
 
-.content button:hover {
-    background: crimson;
-}
-
-.empty-div img {
-    width: 100%;
-    height: auto;
-}
-
-.info-section {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 80px;
-    background-color: #fff8f0;
-}
-
-.grid-container2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    width: 100%;
-    padding: 50px;
-}
-
-.info-text h1 {
-    font-family: "Poppins", sans-serif;
-    font-size: 4rem;
-    font-weight: bold;
-}
-
-.info-text p {
-    font-family: "Poppins", sans-serif;
-    line-height: 1.4;
-    font-size: 18px;
-}
-
-.info-img img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.info-img img:hover {
-    box-shadow: 0 0 50px burlywood;
+button:hover {
     transform: perspective(200px) translateZ(5px);
 }
 
-.gallery {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 50px;
+.Red {
+    background-color: red;
 }
 
-.gallery h1 {
-    font-size: 4rem;
-    font-weight: bold;
-    font-family: "Poppins", sans-serif;
+.Green {
+    background-color: green;
 }
 
-.grid-container3 {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 15px;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    width: 100%;
+.Blue {
+    background-color: blue;
 }
 
-.gallery-img img {
-    width: 100%;
-    height: 300px;
-    border-radius: 5px;
-    cursor: pointer;
+.Orange {
+    background-color: orange;
 }
 
-.gallery-img img:hover {
-    transform: perspective(200px) translateZ(5px);
-}
-
-@media(max-width:800px) {
-    .HideonMobile {
-        display: none;
-    }
-
-    .Showsidebar {
-        display: flex;
-    }
-}
-
-@media(max-width:450px) {
-    .sidebar {
-        width: 100vw;
-    }
+.White {
+    background-color: white;
+    color: #333;
 }
 
 @media(max-width:768px) {
-    .grid-container1 {
+    .container {
         grid-template-columns: 1fr;
     }
-
-    .grid-container2 {
-        grid-template-columns: 1fr;
-    }
-
 }
 
-@media(max-width:400px) {
-    .content h2 {
-        font-size: 2rem;
-    }
-
-    .content p {
-        font-size: 16px;
-    }
-
-    .content button {
-        padding: 5px;
-        font-size: 1.2rem;
-    }
-
-    .info-text h1 {
-        font-size: 2.5rem;
-    }
-
-    .info-text p {
-        font-size: 16px;
-    }
-
-    .Hidetext {
-        display: none;
-    }
-
-    .galler h1 {
-        font-size: 2rem;
-    }
-}
-
-@media(max-width:555px) {
-    .gallery-img img {
-        width: 100%;
-        height: auto;
-        border-radius: 5px;
-    }
-
-}
-
-@media(max-width:380px) {
-    .gallery h1 {
-        font-size: 30px;
+@media(min-width:768px) and (max-width:3000px) {
+    .container {
+        gap: 20px;
     }
 }
