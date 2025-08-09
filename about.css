@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #151a21;
+    font-family: sans-serif;
+}
+
+nav {
+    background-color: rgba(255, 255, 255, 0.944);
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+nav li {
+    height: 60px;
+}
+
+nav a {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: orangered;
+    padding: 0 30px;
+    text-decoration: none;
+}
+
+nav li:first-child {
+    margin-right: auto;
+}
