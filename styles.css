@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif, Arial;
+}
+
+button {
+    width: 100px;
+    height: 100px;
+    border: none;
+    background-color: #151a217c;
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    border-radius: 50%;
+}
+
+button:hover {
+    background-color: #151a2196;
+}
+
+#clear {
+    background-color: rgba(255, 166, 0, 0.608);
+}
+
+#clear:hover {
+    background-color: rgba(255, 166, 0, 0.795);
+}
+
+#clear:active {
+    background-color: rgba(255, 166, 0, 0.938);
+}
+
+button:active {
+    background-color: #151a21eb;
+}
+
+.container {
+    max-width: 400px;
+    width: 90%;
+    background-color: #151a2185;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.keys {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    background-color: #151a2182;
+    padding: 20px;
+}
+
+.display {
+    width: 100%;
+    padding: 30px;
+    background-color: #151a21b7;
+    color: white;
+    font-size: 3rem;
+}
+
+#Enter {
+    font-size: 2rem;
+    background-color: rgba(255, 166, 0, 0.903);
+}
+
+#Enter:hover {
+    background-color: rgba(255, 166, 0, 0.942);
+}
+
+#Enter:active {
+    background-color: orange;
+}
