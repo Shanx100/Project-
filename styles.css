@@ -10,73 +10,44 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: sans-serif, Arial;
 }
 
-button {
-    width: 100px;
-    height: 100px;
-    border: none;
-    background-color: #151a217c;
-    color: white;
+h1 {
+    margin-bottom: 10px;
     font-size: 3rem;
     font-weight: bold;
-    border-radius: 50%;
-}
-
-button:hover {
-    background-color: #151a2196;
-}
-
-#clear {
-    background-color: rgba(255, 166, 0, 0.608);
-}
-
-#clear:hover {
-    background-color: rgba(255, 166, 0, 0.795);
-}
-
-#clear:active {
-    background-color: rgba(255, 166, 0, 0.938);
-}
-
-button:active {
-    background-color: #151a21eb;
+    color: #151a21a8;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .container {
-    max-width: 400px;
-    width: 90%;
-    background-color: #151a2185;
+    width: 550px;
+    background-color: #151a219e;
     border-radius: 15px;
     overflow: hidden;
 }
 
-.keys {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 5px;
-    background-color: #151a2182;
-    padding: 20px;
-}
-
-.display {
-    width: 100%;
-    padding: 30px;
-    background-color: #151a21b7;
-    color: white;
+.Display {
+    padding: 25px;
     font-size: 3rem;
+    color: black;
+    font-weight: 400px;
+    background-color: #151a21;
 }
 
-#Enter {
-    font-size: 2rem;
-    background-color: rgba(255, 166, 0, 0.903);
+.Display ol {
+    list-style: none;
 }
 
-#Enter:hover {
-    background-color: rgba(255, 166, 0, 0.942);
+.tasks {
+    padding: 30px;
 }
 
-#Enter:active {
-    background-color: orange;
+.tasks li {
+    list-style: none;
+    margin: 10px;
+}
+
+li button {
+    margin-left: 5px;
 }
